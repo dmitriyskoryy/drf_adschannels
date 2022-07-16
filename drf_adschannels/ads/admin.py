@@ -17,7 +17,7 @@ class AdtAdminForm(ModelForm):
     text = CharField()
     class Meta:
         model = Adt  # Тут нужно указать название модели в которой будем использовать CKEditor
-        fields = '__all__'
+        fields = ('author', 'adtCategory', 'title', 'slug', 'text',)
 
 
 @admin.register(Adt)
